@@ -140,7 +140,7 @@ class Follower:
 	    	# Check that at least one ArUco marker was detected
 	    	if len(corners) > 0:
 		    rvec, tvec, _ = cv2.aruco.estimatePoseSingleMarkers(corners, 0.10, camera_matrix, None)
-		    if tvec[0][0][0] < 0.05 and self.count != -1:
+		    if tvec[0][0][0] < 0.015 and self.count != -1:
 			print "Marker distance: %f" % tvec[0][0][0]			
 			self.count += 1
 			if self.count == 1:
@@ -244,7 +244,7 @@ class Follower:
 			self.previous_x = 0.5
 		    else:
 			self.previous_x = self.twist.linear.x
-		    #print "Linear speed x: %.3f" % self.twist.linear.x
+		    print "Linear speed x: %.3f" % self.twist.linear.x
                     self.twist.angular.z = -PID_a.set_current_error(alpha)+PID_b.set_current_error(beta)
                     self.cmd_vel_pub.publish(self.twist)
  
