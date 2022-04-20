@@ -25,11 +25,7 @@ This is the lab resources for SUSTech EE346.
    
    cd ~/catkin_ws/src/lane_following/scripts/
    
-   chmod +x lane_following_part1.py
-   
-   chmod +x lane_following_part2.py
-   
-   chmod +x lane_following_part3.py
+   chmod +x lane_following_part1.py lane_following_part2.py lane_following_part3.py
    
    cd ~/catkin_ws
    
