@@ -25,12 +25,20 @@ This is the lab resources for SUSTech EE346.
    
    cd ~/catkin_ws/src/lane_following/scripts/
    
-   chmod +x lane_following.py
+   chmod +x lane_following_part1.py
+   
+   chmod +x lane_following_part2.py
+   
+   chmod +x lane_following_part3.py
    
    cd ~/catkin_ws
    
    source devel/setup.bash
    
-   rosrun lane_following lane_following.py
+   sudo pip install opencv-contrib-python
+   
+   rosrun lane_following lane_following_part1.py
+   or rosrun lane_following lane_following_part2.py
+   or rosrun lane_following lane_following_part3.py
 
  ![image](https://github.com/zhaojieting/linefollowing/blob/main/data/demo.gif)
