@@ -34,7 +34,9 @@ This is the lab resources for SUSTech EE346.
    sudo pip install opencv-contrib-python
    
    rosrun lane_following lane_following_part1.py
+   
    or rosrun lane_following lane_following_part2.py
+   
    or rosrun lane_following lane_following_part3.py
 
  ![image](https://github.com/zhaojieting/linefollowing/blob/main/data/demo.gif)
