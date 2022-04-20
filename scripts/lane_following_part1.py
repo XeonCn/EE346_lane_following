@@ -56,8 +56,8 @@ class Follower:
 
                     err = w/2 - fpt_x
 
-                    self.twist.linear.x = 0*0.3
-                    self.twist.angular.z = 0*(err*90.0/160)/15
+                    self.twist.linear.x = 0.3
+                    self.twist.angular.z = (err*90.0/160)/15
                     self.cmd_vel_pub.publish(self.twist)
                 cv2.imshow("window", image)
                 cv2.waitKey(1)
