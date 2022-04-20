@@ -1,5 +1,5 @@
 # lane following
-This is the lab resources for SUSTech EE346.
+This is the lab resources for SUSTech EE346. My SID:11813118.
 
 # Usage
 
